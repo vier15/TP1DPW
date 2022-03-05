@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP1 - Desain dan Pemrograman Web</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <a href = "/index.html">
+                  <img class="logo" src="/Assets/Rhodes_Island.png">
+                </a>
+            </div>
+    
+            <div class="header-title">
+                <h1>Rhodes Island Neural Network</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/travel.html">Travel Terra</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="content-container">
+        <div class="sidebar">
+          <h2>Profil Diri</h2>
+          <img src="/Assets/Foto_Muka.jpg">
+          <div class="biodata">
+            <table>
+              <tr class="Nama">
+                <th>Name</th>
+                <td>Raihan Fitrah V Ramadhan</td>
+              </tr>
+              <tr>
+                <th>NIM</th>
+                <td>2007874</td>
+              </tr>
+              <tr>
+                <th>Jenis Kelamin</th>
+                <td>Laki-laki</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>raihanfitrah15@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="content-1">
+          <form method="post" action="/index.html" class="contact-form">
+            <br>
+              <label for="name">
+                Nama <br>
+                <input name="name" type="text" placeholder="Nama kamu..." required oninvalid="setCustomValidity('Harap isi bidang ini.')">
+              </label>
+            <br />
+
+            <br>
+              <label for="domisili">
+                Kota/Kabupaten <br>
+                  <select id="domisili" name="domisili" class="form-control"">
+                    <option value="Bandung">Bandung</option>
+                    <option value="Bogor">Bogor</option>
+                  </select>
+              </label>
+            <br />
+
+            <br>
+              <label for="message">
+                  Pesan<br>
+                  <textarea name="pesan" required oninvalid="setCustomValidity('Harap isi bidang ini.')"></textarea>
+              </label>
+            <br />
+
+            <br>
+              <input type="submit" value="Submit" class="submit-button">
+            </br>
+
+          </form>
+          <br><br>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <h2>Praktikum Desain dan Pemrograman Web</h2>
+      </div>
+    </footer>
+
+  </body>
+</html>
